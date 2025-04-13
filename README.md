@@ -1,31 +1,3 @@
-<p align="center">
-<img src='https://user-images.githubusercontent.com/53612189/173657492-044de1ba-3077-4932-9d4c-0df5d562a384.png' align="center" width=800>
-</p>
-<h1 align="center">
-  Movie Booking System
-</h1>
-
-<p align="center">
-  Be sure to ⭐ this repo so you can keep up to date on any daily progress!
-</p>
-
-<p align="center">
-<a href="https://github.com/Abhijith14/theatre-ticketing-system/" target="_blank">
-    <img src="https://img.shields.io/badge/version-v2.0-blue?style=for-the-badge&logo=none" alt="Movie version" />
-</a>&nbsp;
-<a href="https://www.python.org/" target="_blank">
-    <img src="https://img.shields.io/badge/PYTHON-3.6+-00ADD8?style=for-the-badge&logo=python" alt="python version" />
-</a>&nbsp;
-<a href="https://github.com/Abhijith14/theatre-ticketing-system" target="_blank">
-    <img src="https://img.shields.io/badge/Project Type-Website(Django)-success?style=for-the-badge&logo=none" alt="project type" />
-</a>&nbsp;
-<img src="https://img.shields.io/badge/license-GNU v3.0-red?style=for-the-badge&logo=none" alt="license" />
-</p>
-
-<br>
-
-## ⚡️ Quick start
-
 First of all, download and install [Python](https://www.python.org/downloads/) and your favourite IDE (I used [PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows)). Python Version `3.6` or higher is required.
 
 Install Django :
