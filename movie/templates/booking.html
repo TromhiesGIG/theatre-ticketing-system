@@ -67,9 +67,9 @@
                     <td></td>
                     {% for i in row %}
                     <td>{{i}}</td>
-                     {% ifequal i 5 %}
+                    {% if i == 5 %}
                       <td></td>
-                     {% endifequal %}
+                    {% endif %}
                     {% endfor %}
                 </tr>
 
@@ -88,17 +88,17 @@
                         <span class="smallBox redBox confirmed_disp" id={{i}}></span>
                         {% endif %}
                     </td>
-                        {% ifequal i v.4 %}
-                         <td></td>
-                        {% endifequal %}
+                        {% if i == v.4 %}
+                            <td></td>
+                        {% endif %}
                     {% endfor %}
 
                 </tr>
-                   {% ifequal j "E" %}
-                         <tr>
+                    {% if j == "E" %}
+                        <tr>
                             <td></td>
                         </tr>
-                        {% endifequal %}
+                    {% endif %}
                 {% endfor %}
             </table>
 

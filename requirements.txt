@@ -1,11 +1,10 @@
-asgiref==3.4.1
-Django==3.2.9
-Django≥4.2
-img2pdf==0.4.3
-lxml==4.6.4
+asgiref>=3.7.0
+Django>=5.0
+img2pdf==0.4.3        # Test compatibility; upgrade if issues
+lxml>=4.9.0
+numpy>=1.26.0
 opencv-python>=4.9.0 
 pikepdf>=5.0.0
 Pillow>=10.0.0
 pytesseract>=0.3.10
 sqlparse>=0.4.4
-numpy>=1.21.0,<1.23.0
