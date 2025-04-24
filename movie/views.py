@@ -533,7 +533,10 @@ def book_movie(request, pid):
         show_time = request.POST['show_time_sub']
         show_date = request.POST['show_date_sub']
 
-        time_obj = Movie_Time.objects.filter(screen_id=pid, time1=show_time)[0].id
+        time_obj = Movie_Time.objects.filter(screen_id=pid, time1=show_time).first()
+        if not time_obj:
+        # Handle missing show time - example error response
+            return HttpResponse("Invalid show time or screen selected.")
 
         mov_obj = Movie.objects.filter(name=movie_name, screen=str(scr_obj))[0].id
 
@@ -757,7 +760,10 @@ def ret_seats(request):
 
             scr_obj_get = Movie_Time.objects.filter(screen_id=screen)[0].screen
 
-            time_obj = Movie_Time.objects.filter(screen_id=screen, time1=time_ajax)[0].id
+            time_obj = Movie_Time.objects.filter(screen_id=screen,time1=time_ajax).first()
+
+            if not time_obj:
+                return HttpResponse("Invalid show time or screen", status=404)
 
             mov_obj = Movie.objects.filter(name=movie_name, screen=str(scr_obj_get))[0].id
 
@@ -1134,4 +1140,3 @@ def set_show(request):
 # 1. Screen name length <= 8
 # 2. Enable pop-up from every links
 # 3. Add movie_movie_time datas before adding a movie
-
