@@ -10,4 +10,5 @@ pytesseract>=0.3.10
 sqlparse>=0.4.4
 gunicorn
 pytz
+whitenoise
 
