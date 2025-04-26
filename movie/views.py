@@ -63,6 +63,7 @@ def login_admin(request):
 
         else:
             error = True
+            return redirect(Admin_Home)
 
     context['error'] = error
 
