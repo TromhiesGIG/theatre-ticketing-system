@@ -8,5 +8,5 @@ pikepdf>=5.0.0
 Pillow>=10.0.0
 pytesseract>=0.3.10
 sqlparse>=0.4.4
-pip install gunicorn
+gunicorn
 
